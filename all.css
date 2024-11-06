@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: flex;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+body::before {
+    content: "";
+    background: url("https://img.hotimg.com/pixel-red-brick-wall-seamless-600nw-1799717920.webp");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    background: rgba(2, 48, 174, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#mainContainerAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+}
+
+#monitorpart {
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    justify-items: center;
+    /* border: 2px solid red; */
+    /* position: relative; */
+    /* height: %; */
+    width: 90%;
+}
+
+#keyboardpart {
+    /* display: none; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    /* position: absolute; */
+}
+
+#background-click-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 768 * 512 */
+/* #keyboardhere {
+                position: relative;
+            } */
+
+#keyboard {
+    font-family: "Protest Strike", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    align-items: center;
+    /* border: 1px solid white; */
+    /* height: 225px; */
+    /* width: 708px; */
+    bottom: -5px;
+    position: relative;
+    border-radius: 14px;
+    border-bottom: 10px solid #afafaf;
+    border-left: 4px solid #afafaf;
+    border-right: 5px solid #afafaf;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    /* border-top: 10px solid red; */
+}
+
+#onepart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    justify-items: flex-start;
+    align-items: flex-start;
+    /* width: 800px; */
+    /* border: 2px solid red; */
+
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-start;
+    /* border: 2px solid salmon; */
+    width: 470px;
+    /* right: 10px; */
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.buttondiv {
+    display: flex;
+    flex-direction: row;
+    width: 44px;
+    /* border: 2px solid red; */
+}
+
+.keybtn {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    height: 19px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    border: none;
+    /* border: 2px solid red; */
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;
+                align-content: space-between; */
+    justify-items: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    gap: 5px;
+}
+
+.down {
+    border: 4px solid #afafaf;
+    /* border-radius: 50px; */
+    /* height: 50px; */
+    width: 24px;
+}
+
+.side {
+    border: 1px solid #afafaf;
+}
+
+#bspace {
+    width: 80px;
+    /* border: 2px solid red; */
+}
+
+#bspace .down {
+    width: 80px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    /* justify-content: center;
+                align-items: center;
+                justify-content: center;
+                justify-items: center; */
+}
+
+#row1 {
+    /* gap: 3px; */
+    /* border: 2px solid red; */
+    width: 500px;
+}
+
+#row2 {
+    /* gap: 5px; */
+    width: 400px;
+}
+
+#row3 {
+    /* gap: 3px; */
+    width: 400px;
+}
+
+#row4 {
+    width: 110px;
+}
+
+#spacebar {
+    width: 110px;
+}
+
+#spacebar .down {
+    width: 110px;
+}
+
+#right {
+    position: relative;
+    /* border: 2px solid red; */
+    /* width: 320px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-items: flex-end;
+    /* gap: 50px; */
+    height: 130px;
+}
+
+#row6 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 2px;
+}
+
+#nums {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* top: 22px; */
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap: 5px;
+    /* border: 2px solid red; */
+    width: 100px;
+}
+
+#nums .rows {
+    display: flex;
+    flex-direction: row;
+    /* gap: 15px; */
+    position: relative;
+}
+
+#row10 {
+    display: flex;
+    flex-direction: row;
+}
+
+#zerobtn {
+    width: 80px;
+}
+
+#zerobtn .down {
+    width: 80px;
+}
+
+.maindiv {
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid white;
+    border-top-width: 40px;
+    border-left: 10px solid white;
+    border-left-width: 15px;
+    border-left-style: ridge;
+    border-right: 10px solid white;
+    border-right-width: 15px;
+    border-right-style: groove;
+    border-bottom: 15px solid white;
+    border-bottom-width: 60px;
+    /* width: 800px; */
+    height: 430px;
+    /* top: 80px; */
+    /* position: relative; */
+    justify-content: space-between;
+    align-content: space-between;
+    background: url("https://img.hotimg.com/bpmed.png");
+}
+
+.maindiv .sides {
+    border: 2px solid white;
+    border-width: 20px;
+    position: relative;
+    display: none;
+    /* height: 450px; */
+    /* bottom: 40px; */
+    border-radius: 5px;
+}
+
+#div1 {
+    right: 60px;
+    /* border: 2px solid red; */
+}
+
+#div2 {
+    right: 70px;
+    /* border: 2px solid red; */
+}
+
+#mainscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-start;
+    text-align: center;
+}
+
+#inscreen {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    /* border: 2px solid red; */
+    position: relative;
+    /* width: 500px; */
+    height: 341px;
+    /* right: 60px; */
+}
+
+#logtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    /* border: 1px solid rebeccapurple; */
+    text-align: center;
+    color: rgb(10, 185, 10);
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 590px;
+    /* top: 10px; */
+    position: relative;
+}
+
+#logtop button {
+    background: none;
+    border: none;
+}
+
+#choose {
+    display: flex;
+}
+
+#login {
+    display: none;
+}
+
+#signup {
+    display: none;
+}
+
+#centerform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#choosebtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#form {
+    display: none;
+}
+
+#signupform {
+    display: none;
+}
+
+#choosebtns button {
+    background: none;
+    border: none;
+    color: #5bc416;
+}
+
+#buttons {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    justify-items: flex-end;
+    flex-wrap: wrap;
+    /* border: 2px solid hotpink; */
+    border-bottom: 6px solid white;
+    border-top: 10px solid white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    /* width: 990px; */
+    /* right: 5px; */
+    /* top: 62px; */
+}
+
+#buttons button {
+    background: none;
+    border: none;
+}
+
+#power {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid navy; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    background: rgb(97, 193, 7);
+    border-radius: 50%;
+}
+
+/* #power button img{
+                height: 50px;
+                width: 50px;
+            } */
+
+#volume button img {
+    height: 30px;
+    width: 30px;
+}
+
+#volume button {
+    background: rgba(46, 149, 1, 0.46);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.drag {
+    position: relative;
+    right: 20px;
+}
+
+.signform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    /* border: 2px solid red; */
+    width: 700px;
+    height: 250px;
+}
+
+.formup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    /* border: 2px solid brown; */
+    height: 100px;
+    /* width: 400px; */
+}
+
+.formup input {
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: large;
+    width: 300px;
+    color: rgba(8, 207, 8, 0.676);
+}
+
+.subup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    /* border: 2px solid hotpink; */
+    width: 250px;
+    height: 100px;
+}
+
+.subup button {
+    background: rgb(69 157 69 / 80%);
+    border: none;
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+}
+
+#backbtn {
+    display: none;
+}
+
+#rough {
+    display: none;
+}
+
+#speaker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    /* position: relative; */
+    /* border: 2px solid red; */
+    bottom: 100px;
+}
+
+#mine {
+    position: relative;
+    /* width: 300px; */
+}
+
+#myImage {
+    position: relative;
+    top: 70px;
+    display: none;
+}
+
+#minebtn {
+    background: none;
+    border: none;
+}
+
+.volumes {
+    position: relative;
+    background: grey;
+    border-radius: 50px;
+}
+
+.astyled {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+#asbtn {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 844px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+
+    body::before {
+        content: "";
+        background: url("https://img.hotimg.com/table.jpeg");
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+    }
+
+    body::after {
+        content: "";
+        background: rgba(131, 131, 132, 0.781);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .mainContainerAll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        /* border: 2px solid slateblue; */
+    }
+
+    .keyboardpart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        /* border: 2px solid mediumseagreen; */
+    }
+
+    .monitorhere {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        /* border: 2px solid teal; */
+    }
+
+    #topscreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        /* border: 2px solid rebeccapurple; */
+    }
+
+    #topper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #topside {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid #04192e;
+        background-color: #04192e;
+        /* width: 460px; */
+        /* width will be commented */
+        min-width: 300px;
+        /* min width will be 239px */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #topside button {
+        background: none;
+        border: none;
+    }
+
+    #topside button img {
+        width: 10px;
+        height: 10px;
+    }
+
+    #centered {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #leftside {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid #04192e;
+        /* max-height: 600px; */
+        min-height: 360px;
+        height: 400px;
+    }
+
+    #screenside {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid black;
+        background: url(bluebg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* width: 440px; */
+        /* max-height: 500px; */
+        min-height: 360px;
+        height: 400px;
+        /* min-width: 350px; */
+        /* width: 218px; */
+        min-width: 280px;
+        font-family: "Edu AU VIC WA NT DOTS", cursive;
+    }
+
+    .innerscreens {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        max-height: 300px;
+        min-height: 238px;
+        /* height: 300px; */
+        /* border: 2px solid red; */
+        max-width: 250px;
+        min-width: 215px;
+        /* max width will be 215px and min will be 194px */
+    }
+
+    .topops {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        color: rgb(4, 228, 228);
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    .topops img {
+        height: 30px;
+    }
+
+    .bottomops {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .bottomops .seperation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .chooseform {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+        font-weight: bolder;
+        /* border: 2px solid red; */
+        font-size: large;
+        gap: 10px;
+    }
+
+    .chooseform button {
+        color: rgb(4, 228, 228);
+        background: none;
+        border: none;
+    }
+
+    .sigform {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        /* border: 2px solid red; */
+    }
+
+    .sigform form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: center;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .logform form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: center;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .forming {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .forming input {
+        background: none;
+        border: none;
+        color: rgb(4, 228, 228);
+    }
+
+    .forming input::placeholder {
+        color: rgb(4, 228, 228);
+    }
+
+    .submission button {
+        background: none;
+        border: none;
+        color: rgb(4, 228, 228);
+        border-style: dashed;
+        font-size: x-large;
+    }
+
+    .submission button:hover {
+        border-style: double;
+    }
+
+    .logform {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        /* border: 2px solid red; */
+    }
+
+    #rightside {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid #04192e;
+        /* max-height: 600px; */
+        min-height: 360px;
+        height: 400px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .vols {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        text-align: center;
+        width: 0px;
+        height: 78px;
+    }
+
+    .vols button {
+        background: none;
+        /* border: none; */
+        height: 25px;
+    }
+
+    .vols .power {
+        height: 20px;
+    }
+
+    .power {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    #bottommbl {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #bottomside {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid #04192e;
+        background-color: #04192e;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        /* width: 460px; */
+        /* width will be commented and min width will be 239px same as topside */
+        min-width: 300px;
+    }
+
+    #bottomside button {
+        background: none;
+        background-color: grey;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    .minebtn {
+        background: none;
+        border: none;
+    }
+}
